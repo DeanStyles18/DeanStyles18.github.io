@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bikrant Bidyut Kakati - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>I'm Bikrant Bidyut<br>Kakati</h1>
+                <p>Specializing in Android Development, Flutter, and Web Technologies</p>
+               
+            </div>
+        </div>
+        <div class="diagonal-bottom"></div>
+    </section>
+
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="experience-content">
+                <div class="profile-section">
+                    <div class="profile-image-placeholder">
+                        <img src="images/profile.jpg" alt="Profile Picture" class="profile-image">
+                    </div>
+                </div>
+                <div class="experience-details">
+                    <h2>Work Experience</h2>
+                    <div class="experience-item">
+                        <h3>Android App Development Intern</h3>
+                        <p>EdgeNRoots (Virtual)</p>
+                        <p>Duration: July 2024 - November 2024</p>
+                        <ul>
+                            <li>Developed an Android application using Flutter</li>
+                        </ul>
+                    </div>
+
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>B.Tech</h3>
+                        <p>Assam Don Bosco University, Azara Campus</p>
+                        <p>Duration: 2021 - 2025</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Senior Secondary (XII) - Science</h3>
+                        <p>Faculty Hr Sec School, Kamrup (CBSE)</p>
+                        <p>Year: 2019</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Development</h3>
+                    <p>Native Android and Flutter cross-platform applications</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Modern web applications using React and Node.js</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>User-centered design with Figma and wireframing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="diagonal-top"></div>
+        <div class="container">
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p>I'm a passionate developer pursuing B.Tech at Assam Don Bosco University. With expertise in Android development, Flutter, and web technologies, I create innovative solutions that make a difference.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/DeanStyles18" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="diagonal-bottom"></div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project-name="Virtual Try-On" 
+                     data-project-description="Google Extension for product try-on using image upload"
+                     data-project-images='["images/projects/p2a.png"]'
+                     data-project-video="https://www.loom.com/share/149525eefa2148e88db5025a84f30619?sid=293021c8-92aa-4655-b1b8-822f0fca2efc">
+                    <div class="project-details">
+                        <h3>Virtual Try-On</h3>
+                        <p>Google Extension for product try-on using image upload</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-name="Enchanted Events" 
+                     data-project-description="Mediator platform for customers and event managers"
+                     data-project-images='["/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800"]'>
+                    <div class="project-image">
+                        <img src="images/projects/p2a.png" alt="Enchanted Events">
+                    </div>
+                    <div class="project-details">
+                        <h3>Enchanted Events</h3>
+                        <p>Mediator platform for customers and event managers</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-name="Meloverse" 
+                     data-project-description="Entertainment app for videos, songs, and artist discovery"
+                     data-project-images='["images/projects/p1a.jpg", "images/projects/p1b.jpg", "images/projects/p1c.jpg"]'>
+                    <div class="project-image">
+                        <img src="images/projects/p1a.jpg" alt="Meloverse">
+                    </div>
+                    <div class="project-details">
+                        <h3>Meloverse</h3>
+                        <p>Entertainment app for videos, songs, and artist discovery</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-name="Medicare" 
+                     data-project-description="Blockchain-based medicine expiration tracking system"
+                     data-project-images='["/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800"]'>
+                    <div class="project-image">
+                        <img src="images/projects/p2a.png" alt="Medicare">
+                    </div>
+                    <div class="project-details">
+                        <h3>Medicare</h3>
+                        <p>Blockchain-based medicine expiration tracking system</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-name="Sportsblog" 
+                     data-project-description="Blogging platform for sports enthusiasts"
+                     data-project-images='["/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800"]'>
+                    <div class="project-image">
+                        <img src="images/projects/p2a.png" alt="Sportsblog">
+                    </div>
+                    <div class="project-details">
+                        <h3>Sportsblog</h3>
+                        <p>Blogging platform for sports enthusiasts</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-name="Quiz App" 
+                     data-project-description="Interactive quiz application with multiple categories"
+                     data-project-images='["/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800"]'>
+                    <div class="project-image">
+                        <img src="images/projects/p2a.png" alt="Quiz App">
+                    </div>
+                    <div class="project-details">
+                        <h3>Quiz App</h3>
+                        <p>Interactive quiz application with multiple categories</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+                <div class="project-card" data-project-name="Music App" 
+                     data-project-description="Modern music streaming app with playlist creation"
+                     data-project-images='["/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800", "/placeholder.svg?height=500&width=800"]'>
+                    <div class="project-image">
+                        <img src="images/projects/p2a.png" alt="Music App">
+                    </div>
+                    <div class="project-details">
+                        <h3>Music App</h3>
+                        <p>Modern music streaming app with playlist creation</p>
+                        <a href="#" class="project-link">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="diagonal-top"></div>
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>bikrantbidyut12@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+91 7399320608</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Guwahati, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
