@@ -708,6 +708,52 @@ body {
   color: var(--secondary);
 }
 
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 26, 46, 0.95);
+    z-index: 1500;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.mobile-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-menu ul li {
+    margin: 1rem 0;
+}
+
+.mobile-menu ul li a {
+    color: var(--light);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.mobile-menu ul li a:hover {
+    color: var(--secondary);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero .container {
@@ -727,4 +773,78 @@ body {
   .projects-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .navbar {
+        padding: 0.5rem 0;
+    }
+
+    .nav-links {
+        display: none; /* Hide nav links, will add mobile menu later */
+    }
+
+    .hero {
+        padding: 5rem 0 3rem;
+        min-height: 70vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .services-grid, .projects-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically on mobile */
+        gap: 1rem;
+    }
+
+    .experience-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image-placeholder {
+        margin-bottom: 1rem;
+        align-self: center;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+/* Mobile Menu Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: var(--primary);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
 }
